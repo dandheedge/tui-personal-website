@@ -1,0 +1,49 @@
+/* Dracula Theme */
+[data-theme="dracula"] {
+  /* Background colors */
+  --drc-bg: #282a36;
+  --drc-current-line: #44475a;
+  --drc-selection: #44475a;
+
+  /* Foreground colors */
+  --drc-fg: #f8f8f2;
+  --drc-comment: #6272a4;
+
+  /* Accent colors */
+  --drc-cyan: #8be9fd;
+  --drc-green: #50fa7b;
+  --drc-orange: #ffb86c;
+  --drc-pink: #ff79c6;
+  --drc-purple: #bd93f9;
+  --drc-red: #ff5555;
+  --drc-yellow: #f1fa8c;
+
+  /* Mapped theme variables */
+  --bg-primary: var(--drc-bg);
+  --bg-secondary: #21222c;
+  --bg-tertiary: var(--drc-current-line);
+  --bg-hover: #4d4f5c;
+
+  --text-primary: var(--drc-fg);
+  --text-secondary: #f8f8f2cc;
+  --text-muted: var(--drc-comment);
+
+  --accent: var(--drc-purple);
+  --accent-secondary: var(--drc-pink);
+  --accent-success: var(--drc-green);
+  --accent-warning: var(--drc-yellow);
+  --accent-error: var(--drc-red);
+  --accent-info: var(--drc-cyan);
+
+  --border-color: var(--drc-comment);
+  --border-color-focus: var(--drc-purple);
+
+  --tab-active: var(--drc-purple);
+  --tab-inactive: var(--drc-comment);
+
+  --badge-bg: var(--drc-current-line);
+  --badge-text: var(--drc-fg);
+
+  --scrollbar-track: var(--drc-current-line);
+  --scrollbar-thumb: var(--drc-comment);
+}

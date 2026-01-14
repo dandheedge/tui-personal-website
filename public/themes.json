@@ -1,0 +1,30 @@
+{
+  "themes": [
+    {
+      "id": "catppuccin",
+      "name": "Catppuccin Mocha",
+      "description": "Warm, cozy, and dark"
+    },
+    {
+      "id": "gruvbox",
+      "name": "Gruvbox Dark",
+      "description": "Retro, earthy tones"
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "description": "Arctic, elegant, minimal"
+    },
+    {
+      "id": "tokyo-night",
+      "name": "Tokyo Night",
+      "description": "Cyberpunk neon vibes"
+    },
+    {
+      "id": "dracula",
+      "name": "Dracula",
+      "description": "Gothic purple and pink"
+    }
+  ],
+  "default": "catppuccin"
+}

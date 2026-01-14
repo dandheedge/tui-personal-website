@@ -1,0 +1,65 @@
+/* Tokyo Night Theme */
+[data-theme="tokyo-night"] {
+  /* Background colors */
+  --tn-bg-dark: #16161e;
+  --tn-bg: #1a1b26;
+  --tn-bg-highlight: #292e42;
+  --tn-terminal-black: #414868;
+
+  /* Foreground colors */
+  --tn-fg: #c0caf5;
+  --tn-fg-dark: #a9b1d6;
+  --tn-fg-gutter: #3b4261;
+  --tn-dark3: #545c7e;
+  --tn-comment: #565f89;
+  --tn-dark5: #737aa2;
+
+  /* Accent colors */
+  --tn-blue: #7aa2f7;
+  --tn-cyan: #7dcfff;
+  --tn-blue1: #2ac3de;
+  --tn-blue2: #0db9d7;
+  --tn-blue5: #89ddff;
+  --tn-blue6: #b4f9f8;
+  --tn-blue7: #394b70;
+  --tn-magenta: #bb9af7;
+  --tn-magenta2: #ff007c;
+  --tn-purple: #9d7cd8;
+  --tn-orange: #ff9e64;
+  --tn-yellow: #e0af68;
+  --tn-green: #9ece6a;
+  --tn-green1: #73daca;
+  --tn-green2: #41a6b5;
+  --tn-teal: #1abc9c;
+  --tn-red: #f7768e;
+  --tn-red1: #db4b4b;
+
+  /* Mapped theme variables */
+  --bg-primary: var(--tn-bg);
+  --bg-secondary: var(--tn-bg-dark);
+  --bg-tertiary: var(--tn-bg-highlight);
+  --bg-hover: var(--tn-terminal-black);
+
+  --text-primary: var(--tn-fg);
+  --text-secondary: var(--tn-fg-dark);
+  --text-muted: var(--tn-comment);
+
+  --accent: var(--tn-cyan);
+  --accent-secondary: var(--tn-magenta);
+  --accent-success: var(--tn-green);
+  --accent-warning: var(--tn-yellow);
+  --accent-error: var(--tn-red);
+  --accent-info: var(--tn-blue);
+
+  --border-color: var(--tn-terminal-black);
+  --border-color-focus: var(--tn-blue);
+
+  --tab-active: var(--tn-cyan);
+  --tab-inactive: var(--tn-comment);
+
+  --badge-bg: var(--tn-bg-highlight);
+  --badge-text: var(--tn-fg);
+
+  --scrollbar-track: var(--tn-bg-highlight);
+  --scrollbar-thumb: var(--tn-terminal-black);
+}

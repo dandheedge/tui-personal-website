@@ -1,0 +1,350 @@
+/* ASCII Art Header */
+.ascii-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: none;
+}
+
+.ascii-header pre {
+  color: var(--accent);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.header-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Section Headers */
+.section-header {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.section-header::before {
+  content: '$ ';
+  color: var(--accent-secondary);
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border-radius: 0;
+  font-size: 0.8rem;
+  margin: 0.15rem;
+  border: 1px solid var(--border-color);
+}
+
+.badge-primary {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+.badge-secondary {
+  background-color: var(--accent-secondary);
+  color: var(--bg-primary);
+  border-color: var(--accent-secondary);
+}
+
+/* Skill Categories */
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category h3 {
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category h3::before {
+  content: '## ';
+  color: var(--text-muted);
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Experience Item */
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.experience-item:hover {
+  border-left-color: var(--accent);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.exp-company {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exp-period {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.exp-role {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-description {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Project Tree */
+.project-tree {
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.project-tree pre {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.project-name {
+  color: var(--accent);
+}
+
+.project-description {
+  color: var(--text-muted);
+}
+
+/* Contact Box */
+.contact-box {
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.contact-box pre {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-link {
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+  transition: color 0.15s ease;
+}
+
+.contact-link:hover {
+  color: var(--accent);
+}
+
+.contact-link-icon {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.15s ease;
+}
+
+.modal-content {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  animation: slideIn 0.15s ease;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.modal-title {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Help Modal */
+.help-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.help-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.help-table td:first-child {
+  color: var(--accent);
+  white-space: nowrap;
+  width: 80px;
+}
+
+.help-table td:last-child {
+  color: var(--text-secondary);
+}
+
+/* Theme Modal */
+.theme-list {
+  list-style: none;
+}
+
+.theme-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  gap: 0.75rem;
+}
+
+.theme-item:hover {
+  background-color: var(--bg-hover);
+}
+
+.theme-item.active {
+  background-color: var(--bg-tertiary);
+}
+
+.theme-shortcut {
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.theme-indicator {
+  width: 1ch;
+  color: var(--accent);
+}
+
+.theme-name {
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.theme-description {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section */
+.about-content {
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.about-name {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-highlight {
+  color: var(--accent-secondary);
+}
+
+.about-quote {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* Horizontal separator */
+.separator {
+  border: none;
+  border-top: 1px dashed var(--border-color);
+  margin: 1.5rem 0;
+}
+
+pre, [is-~=pre] {
+  background: none;
+  --pre-background: none;
+}

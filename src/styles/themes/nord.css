@@ -1,0 +1,55 @@
+/* Nord Theme */
+[data-theme="nord"] {
+  /* Polar Night */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+
+  /* Snow Storm */
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+
+  /* Frost */
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+
+  /* Aurora */
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  /* Mapped theme variables */
+  --bg-primary: var(--nord0);
+  --bg-secondary: #242933;
+  --bg-tertiary: var(--nord1);
+  --bg-hover: var(--nord2);
+
+  --text-primary: var(--nord4);
+  --text-secondary: var(--nord5);
+  --text-muted: var(--nord3);
+
+  --accent: var(--nord8);
+  --accent-secondary: var(--nord15);
+  --accent-success: var(--nord14);
+  --accent-warning: var(--nord13);
+  --accent-error: var(--nord11);
+  --accent-info: var(--nord9);
+
+  --border-color: var(--nord3);
+  --border-color-focus: var(--nord8);
+
+  --tab-active: var(--nord8);
+  --tab-inactive: var(--nord3);
+
+  --badge-bg: var(--nord2);
+  --badge-text: var(--nord4);
+
+  --scrollbar-track: var(--nord1);
+  --scrollbar-thumb: var(--nord3);
+}

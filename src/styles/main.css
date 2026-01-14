@@ -1,0 +1,92 @@
+/* CSS Layer Order - must be defined first */
+@layer base, utils, components;
+
+/* WebTUI CSS imports */
+@import '@webtui/css';
+
+/* Theme files */
+@import './themes/catppuccin.css';
+@import './themes/gruvbox.css';
+@import './themes/nord.css';
+@import './themes/tokyo-night.css';
+@import './themes/dracula.css';
+
+/* Custom styles */
+@import './layout.css';
+@import './components.css';
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+body {
+  font-family: 'IBM Plex Mono', 'Fira Code', 'JetBrains Mono',
+               'SF Mono', Menlo, Monaco, 'Courier New', monospace;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-color);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+}
+
+/* Focus styling */
+:focus-visible {
+  outline: 2px solid var(--border-color-focus);
+  outline-offset: 2px;
+}
+
+/* Link styling */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+  text-decoration: underline;
+}
+
+/* Pre/code styling */
+pre, code {
+  font-family: inherit;
+  font-size: 0.9em;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+}

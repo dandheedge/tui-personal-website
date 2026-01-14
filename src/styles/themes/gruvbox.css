@@ -1,0 +1,58 @@
+/* Gruvbox Dark Theme */
+[data-theme="gruvbox"] {
+  /* Background colors */
+  --grv-bg-hard: #1d2021;
+  --grv-bg: #282828;
+  --grv-bg-soft: #32302f;
+  --grv-bg1: #3c3836;
+  --grv-bg2: #504945;
+  --grv-bg3: #665c54;
+  --grv-bg4: #7c6f64;
+
+  /* Foreground colors */
+  --grv-fg: #ebdbb2;
+  --grv-fg0: #fbf1c7;
+  --grv-fg1: #ebdbb2;
+  --grv-fg2: #d5c4a1;
+  --grv-fg3: #bdae93;
+  --grv-fg4: #a89984;
+
+  /* Accent colors */
+  --grv-red: #fb4934;
+  --grv-green: #b8bb26;
+  --grv-yellow: #fabd2f;
+  --grv-blue: #83a598;
+  --grv-purple: #d3869b;
+  --grv-aqua: #8ec07c;
+  --grv-orange: #fe8019;
+  --grv-gray: #928374;
+
+  /* Mapped theme variables */
+  --bg-primary: var(--grv-bg);
+  --bg-secondary: var(--grv-bg-hard);
+  --bg-tertiary: var(--grv-bg1);
+  --bg-hover: var(--grv-bg2);
+
+  --text-primary: var(--grv-fg);
+  --text-secondary: var(--grv-fg2);
+  --text-muted: var(--grv-fg4);
+
+  --accent: var(--grv-orange);
+  --accent-secondary: var(--grv-aqua);
+  --accent-success: var(--grv-green);
+  --accent-warning: var(--grv-yellow);
+  --accent-error: var(--grv-red);
+  --accent-info: var(--grv-blue);
+
+  --border-color: var(--grv-bg3);
+  --border-color-focus: var(--grv-yellow);
+
+  --tab-active: var(--grv-orange);
+  --tab-inactive: var(--grv-fg4);
+
+  --badge-bg: var(--grv-bg2);
+  --badge-text: var(--grv-fg);
+
+  --scrollbar-track: var(--grv-bg1);
+  --scrollbar-thumb: var(--grv-bg3);
+}

@@ -1,0 +1,65 @@
+/* Catppuccin Mocha Theme */
+[data-theme="catppuccin"] {
+  /* Base colors */
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+
+  /* Text colors */
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+
+  /* Surface colors */
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+
+  /* Background colors */
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+
+  /* Mapped theme variables */
+  --bg-primary: var(--ctp-base);
+  --bg-secondary: var(--ctp-mantle);
+  --bg-tertiary: var(--ctp-surface0);
+  --bg-hover: var(--ctp-surface1);
+
+  --text-primary: var(--ctp-text);
+  --text-secondary: var(--ctp-subtext1);
+  --text-muted: var(--ctp-overlay1);
+
+  --accent: var(--ctp-peach);
+  --accent-secondary: var(--ctp-mauve);
+  --accent-success: var(--ctp-green);
+  --accent-warning: var(--ctp-yellow);
+  --accent-error: var(--ctp-red);
+  --accent-info: var(--ctp-sky);
+
+  --border-color: var(--ctp-surface2);
+  --border-color-focus: var(--ctp-lavender);
+
+  --tab-active: var(--ctp-peach);
+  --tab-inactive: var(--ctp-overlay1);
+
+  --badge-bg: var(--ctp-surface1);
+  --badge-text: var(--ctp-text);
+
+  --scrollbar-track: var(--ctp-surface0);
+  --scrollbar-thumb: var(--ctp-surface2);
+}
