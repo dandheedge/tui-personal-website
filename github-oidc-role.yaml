@@ -4,7 +4,7 @@ Description: IAM Role for GitHub Actions OIDC
 Parameters:
   GitHubOrg:
     Type: String
-    Default: damarrama
+    Default: dandheedge
   GitHubRepo:
     Type: String
     Default: tui-personal-website
