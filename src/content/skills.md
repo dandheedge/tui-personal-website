@@ -7,6 +7,7 @@ categories:
       - HTML5
       - CSS3
       - SQL
+      - Python
 
   - name: React Ecosystem
     skills:
@@ -30,6 +31,8 @@ categories:
       - GraphQL
       - REST APIs
       - Express
+      - NestJs
+      - Django
 
   - name: Tools & Platforms
     skills:
@@ -38,6 +41,9 @@ categories:
       - CI/CD
       - Vite
       - Webpack
+      - AWS
+      - Linux
+      - Jenkins
 
   - name: Other
     skills:

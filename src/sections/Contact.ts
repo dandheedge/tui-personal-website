@@ -23,7 +23,7 @@ export function createContactSection(): HTMLElement {
   const pre = document.createElement('pre');
   let boxContent = `┌${'─'.repeat(boxWidth)}┐\n`;
   boxContent += `│${' '.repeat(boxWidth)}│\n`;
-  boxContent += `│   <span style="color: var(--accent)">CONTACT INFORMATION</span>${' '.repeat(boxWidth - 23)}│\n`;
+  boxContent += `│   <span style="color: var(--accent)">CONTACT INFORMATION</span>${' '.repeat(boxWidth - 22)}│\n`;
   boxContent += `│${' '.repeat(boxWidth)}│\n`;
 
   introLines.forEach(line => {

@@ -86,6 +86,9 @@ async function initApp(): Promise<void> {
   const app = document.querySelector<HTMLDivElement>('#app');
   if (!app) return;
 
+  // Clear any prerendered content to avoid duplication
+  app.replaceChildren();
+
   // Load themes
   await loadThemes();
 
@@ -192,4 +195,9 @@ async function initApp(): Promise<void> {
 }
 
 // Start the application
-document.addEventListener('DOMContentLoaded', initApp);
+// Check if document is already ready (important for prerendered pages)
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}

@@ -16,7 +16,7 @@ export default defineConfig({
       }),
       postProcess(renderedRoute) {
         renderedRoute.html = renderedRoute.html
-          .replace(/http:\/\/localhost:\d+/g, 'https://dandhi.dev')
+          .replace(/http:\/\/localhost:\d+/g, 'https://damarrama.com')
       }
     })
   ]

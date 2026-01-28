@@ -17,7 +17,7 @@ export function createHeader(): HTMLElement {
 
   const subtitle = document.createElement('p');
   subtitle.className = 'header-subtitle';
-  subtitle.textContent = 'Front-end Developer | Jakarta, Indonesia';
+  subtitle.textContent = 'Software Engineer | Jakarta, Indonesia';
 
   asciiContainer.appendChild(pre);
   asciiContainer.appendChild(subtitle);

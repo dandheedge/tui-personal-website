@@ -8,6 +8,10 @@ build/
 out/
 *.log
 
+# AWS SAM
+.aws-sam/
+samconfig.toml.bak
+
 # Environment variables
 .env
 .env.local

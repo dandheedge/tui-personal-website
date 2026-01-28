@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: ACM Certificate for CloudFront (must be deployed to us-east-1)
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: damarrama.com
+
+Resources:
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      SubjectAlternativeNames:
+        - !Sub 'www.${DomainName}'
+      ValidationMethod: DNS
+
+Outputs:
+  CertificateArn:
+    Value: !Ref Certificate
+    Description: Use this ARN in the main stack
+    Export:
+      Name: DamarramaCertificateArn

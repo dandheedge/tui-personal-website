@@ -1,7 +1,7 @@
 ---
 name: Dandhi Damarrama
 alias: Dandhee
-title: Front-end Developer
+title: Software Engineer
 experience: 8+ years
 location: Jakarta, Indonesia
 timezone: GMT+7
