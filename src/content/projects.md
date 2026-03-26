@@ -14,4 +14,10 @@ projects:
       - Vue.js
       - Node.js
       - MongoDB
+  - name: DevOps learning
+    description: Ongoing journey into infrastructure—built serverless systems with AWS Lambda/EventBridge/SES and an automated CI/CD pipeline with AWS SAM, S3, and CloudFront.
+    tech:
+      - AWS
+      - Github Actions
+      - WireGuard
 ---
